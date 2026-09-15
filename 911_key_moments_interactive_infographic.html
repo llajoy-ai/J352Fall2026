@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>September 11, 2001 — Key Moments | Interactive Infographic</title>
+<style>
+:root{--bg:#0b1220;--panel:#121c2e;--panel2:#17243a;--text:#edf3f8;--muted:#a9b7c8;--accent:#e8a24b;--line:#33445d;--danger:#d96b5f}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:linear-gradient(135deg,#09101c,#111c2d);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+main{max-width:1100px;margin:auto;padding:38px 22px 70px}
+header{padding:26px 0 32px;border-bottom:1px solid var(--line)}
+.kicker{text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-size:.78rem;font-weight:800}
+h1{font-size:clamp(2.1rem,5vw,4.5rem);line-height:1.02;margin:10px 0 14px}
+.subtitle{max-width:760px;color:var(--muted);font-size:1.08rem}
+.notice{margin-top:20px;padding:14px 16px;background:#182338;border-left:4px solid var(--accent);border-radius:8px;color:#d9e2ed}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin:28px 0}
+button{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+button:hover,button.active{background:var(--accent);color:#17120b;border-color:var(--accent)}
+.timeline{position:relative;margin-top:30px}
+.timeline:before{content:"";position:absolute;left:108px;top:0;bottom:0;width:2px;background:var(--line)}
+.event{display:grid;grid-template-columns:86px 1fr;gap:44px;position:relative;margin:0 0 18px}
+.time{font-weight:800;color:var(--accent);text-align:right;padding-top:22px;font-variant-numeric:tabular-nums}
+.card{background:rgba(18,28,46,.94);border:1px solid var(--line);border-radius:12px;padding:19px 21px;box-shadow:0 8px 24px rgba(0,0,0,.15);transition:.2s}
+.card:hover{transform:translateY(-2px);border-color:#526a8c}
+.card h2{font-size:1.18rem;margin:0 0 7px}
+.card p{margin:6px 0;color:#d3dce7}
+.tag{display:inline-block;font-size:.73rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:7px}
+.dot{position:absolute;left:102px;top:25px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid #0b1220}
+footer{margin-top:45px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+.sources{margin-top:20px}
+.sources a{color:#f0bd70}
+.hidden{display:none}
+@media(max-width:700px){main{padding:25px 15px}.timeline:before{left:17px}.event{grid-template-columns:1fr;gap:5px;padding-left:35px}.time{text-align:left;padding-top:0}.dot{left:10px;top:8px}.card{padding:16px}}
+@media print{body{background:white;color:#111}.card{box-shadow:none;background:white;border-color:#aaa}.subtitle,.card p,footer{color:#333}.controls{display:none}.timeline:before{background:#999}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="kicker">Interactive historical timeline</div>
+<h1>September 11, 2001</h1>
+<div class="subtitle">Key moments of the attacks on the World Trade Center in New York City, with the wider U.S. events of that morning included for context.</div>
+<div class="notice"><strong>Historical context:</strong> This infographic is designed for education and remembrance. Times are approximate and follow Eastern Daylight Time (EDT). It avoids graphic imagery and focuses on the sequence of events and emergency response.</div>
+</header>
+
+<div class="controls" aria-label="Timeline controls">
+<button class="active" data-filter="all">All events</button>
+<button data-filter="impact">World Trade Center</button>
+<button data-filter="response">Emergency response</button>
+<button data-filter="context">National context</button>
+<button id="expand">Expand details</button>
+<button id="collapse">Collapse details</button>
+</div>
+
+<section class="timeline" aria-label="September 11 timeline">
+<div class="event" data-type="context"><div class="time">7:59 a.m.</div><div class="card"><span class="tag">Travel / context</span><h2>American Airlines Flight 11 departs Boston</h2><p>Flight 11 leaves Boston Logan International Airport for Los Angeles. It is later hijacked and flown toward New York.</p></div><span class="dot"></span></div>
+
+<div class="event" data-type="context"><div class="time">8:14 a.m.</div><div class="card"><span class="tag">Travel / context</span><h2>United Airlines Flight 175 departs Boston</h2><p>Flight 175 leaves Boston for Los Angeles. It is also later hijacked.</p></div><span class="dot"></span></div>
+
+<div class="event" data-type="impact"><div class="time">8:46 a.m.</div><div class="card"><span class="tag">World Trade Center</span><h2>Flight 11 strikes the North Tower</h2><p>American Airlines Flight 11 crashes into the north face of the World Trade Center's North Tower (1 WTC), beginning the attack in New York City.</p></div><span class="dot"></span></div>
+
+<div class="event" data-type="response"><div class="time">8:46 a.m.</div><div class="card"><span class="tag">Emergency response</span><h2>Emergency response begins</h2><p>Firefighters, police officers, emergency medical personnel and other responders move toward the World Trade Center complex as people begin evacuating.</p></div><span class="dot"></span></div>
+
+<div class="event" data-type="impact"><div class="time">9:03 a.m.</div><div class="card"><span class="tag">World Trade Center</span><h2>Flight 175 strikes the South Tower</h2><p>United Airlines Flight 175 crashes into the south face of the World Trade Center's South Tower (2 WTC), making clear that the first crash was part of a coordinated attack.</p></div><span class="dot"></span></div>
+
+<div class="event" data-type="context"><div class="time">9:37 a.m.</div><div class="card"><span class="tag">National context</span><h2>American Airlines Flight 77 strikes the Pentagon</h2><p>Flight 77 crashes into the Pentagon in Arlington, Virginia. The attacks are now occurring at multiple locations.</p></div><span class="dot"></span></div>
+
+<div class="event" data-type="impact response"><div class="time">9:59 a.m.</div><div class="card"><span class="tag">World Trade Center · response</span><h2>South Tower collapses</h2><p>The South Tower collapses after burning for less than an hour. The collapse sends a large debris and dust cloud through Lower Manhattan.</p></div><span class="dot"></span></div>
+
+<div class="event" data-type="context"><div class="time">10:03 a.m.</div><div class="card"><span class="tag">National context</span><h2>Flight 93 crashes in Pennsylvania</h2><p>United Airlines Flight 93 crashes near Shanksville, Pennsylvania, after passengers and crew attempt to regain control of the hijacked aircraft.</p></div><span class="dot"></span></div>
+
+<div class="event" data-type="response"><div class="time">10:28 a.m.</div><div class="card"><span class="tag">World Trade Center · response</span><h2>North Tower collapses</h2><p>The North Tower collapses, less than two hours after it was struck. Rescue and evacuation operations continue amid the devastation.</p></div><span class="dot"></span></div>
+
+<div class="event" data-type="response"><div class="time">5:20 p.m.</div><div class="card"><span class="tag">World Trade Center · response</span><h2>7 World Trade Center collapses</h2><p>7 World Trade Center, a separate 47-story building in the complex, collapses after sustaining extensive damage and fires.</p></div><span class="dot"></span></div>
+</section>
+
+<footer>
+<strong>Sources & notes</strong>
+<div class="sources">
+<p>Primary reference: U.S. National Archives, <em>9/11 Commission Report</em>; National September 11 Memorial &amp; Museum historical materials; NIST investigations of the World Trade Center. Times are EDT and may be rounded.</p>
+<p>This single-file infographic contains no external libraries, images, fonts, or network requests. It can be opened offline in a modern browser.</p>
+</div>
+</footer>
+</main>
+<script>
+const events=[...document.querySelectorAll('.event')];
+document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{
+ document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active')); b.classList.add('active');
+ const f=b.dataset.filter;
+ events.forEach(e=>e.classList.toggle('hidden',f!=='all' && !e.dataset.type.split(' ').includes(f)));
+});
+document.getElementById('expand').onclick=()=>events.forEach(e=>e.querySelector('.card').style.maxHeight='none');
+document.getElementById('collapse').onclick=()=>events.forEach(e=>e.querySelector('.card').style.maxHeight='');
+</script>
+</body>
+</html>
