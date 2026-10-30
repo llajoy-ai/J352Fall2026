@@ -1,0 +1,60 @@
+
+h6{
+ font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}  
+
+p{
+   font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}  
+
+h2{
+    font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.planePic img{
+   width: 100%; 
+   height: auto;
+   border: 2px solid black;
+}
+
+.header{
+    background-color: #A7EAFA;
+    color: #000000;
+    padding: 10px 0px 10px 0px;
+}
+
+.text{
+    background-color: #A7EAFA;
+    color: black;
+    margin-top: 10px;
+}
+
+.data{
+    border: 2px solid black;
+    background-color: #FCF2AE;
+    color: #000000;
+    margin-top: 10px;
+}
+
+
+iframe{
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
